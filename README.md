@@ -1,2 +1,2 @@
-# Solubility Model Library
+# Solubility Models Library
 
