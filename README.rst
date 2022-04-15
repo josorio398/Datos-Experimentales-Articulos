@@ -1,5 +1,5 @@
-Thermodynamic Solutions
-=======================
+Solubility Models Library
+=========================
 
 The analysis of multicomponent systems leads to elucidate or in its effect to describe in an approximate way the different phenomena
 as molecular interactions between the components of a system.
