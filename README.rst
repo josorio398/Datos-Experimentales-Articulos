@@ -8,9 +8,10 @@ Understanding the behavior of these phenomena allows the development of theoreti
 system, generating computer tools that, in addition to facilitating the analysis, allow a better understanding of the different factors
 involved in the solution process.
 
-One of the most important properties is **solubility**, since it is one of the most important stages in the research and development of pharmaceutical 
-products, since it affects the biopharmaceutical and pharmacokinetic characteristics of the pharmaceutical forms. It is, therefore, that one of the 
-most important lines of research in solution thermodynamics are mathematical models that allow predicting solubility with very low error ranges.
+One of the most important properties is the **solubility**, since it is one of the most important stages in the research and development 
+of pharmaceutical products, since it affects the biopharmaceutical and pharmacokinetic characteristics of the pharmaceutical forms. It is,
+therefore, that one of the most important lines of research in solution thermodynamics are mathematical models that allow predicting solubility
+with very low error ranges.
 
 |travis| |Group| |coveralls| |libraries| |lgtm| |Languages| |IDE| |Education|
 
@@ -49,8 +50,8 @@ most important lines of research in solution thermodynamics are mathematical mod
 Solubility Models 
 =================
 
-Solubility Models is a module of the **Thermodinamic Solution Library** for the calculation of fit parameters, 
-statisticians and graphical representation of calculated values and experimental values of models such as :
+Solubility Models is a library for the calculation of fit parameters, calculated values, statisticians and plotting graph of 
+calculated values and experimental of solubility models such as :
 
 - Modified Apelblat
 - van't Hoff
@@ -61,25 +62,56 @@ statisticians and graphical representation of calculated values and experimental
 - Wilson
 - Weibull of two parameters
   
-Installation 
-============
+Installation of Requirements
+============================
+Before installing the library you must verify the execution environment and install the following requirements 
 
-TermodynamicSolutions may be installed using pip...
+Google Colaboratory Support
+---------------------------
+
+For use in Google Colab install texlive-fonts, texlive-fonts-extra and dvipng package using:
+
+.. code:: python
+
+    !apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng
+
+Jupyter Notebook and JupyterLab Support 
+---------------------------------------
+
+For use in Jupyter Notebook and JupyterLab install jupyter-dash and  python-kaleido packages using:
+
+.. code:: python
+
+    !apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng
+
+Datalore Support 
+---------------------------------------
+
+For use in the enviroment Datalore (https://datalore.jetbrains.com) install texlive-fonts, texlive-fonts-extra and dvipng 
+package using:
+
+.. code:: python
+
+    !sudo apt-get update
+    !sudo apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng -y
+
+Installation and import of SolubilityModels
+===============================================
+
+Solubility models may be installed using pip...
   
 .. code:: python
 
-    !pip install ThermodynamicSolutions
+    !pip install SolubilityModels
 
-To import the SolubilityModels module you can use:
+To import all solubility models you can use:
 
 .. code:: python
 
-    from TermodynamicSolutions import SolubilityModels
+    from SolubilityModels import Models
 
-Classes of Solubility Models
-============================
+To import a particular model you can use the model name e.g:
 
-The Solubility Models module essentially uses two classes for computational analysis, the class ``model``, is 
-used for the analysis of data from a particular model, the class ``models`` is used for the analysis of such 
-data in all solubility models.
+.. code:: python
 
+    from SolubilityModels import Modified_Apelblat
