@@ -97,7 +97,7 @@ package using:
     !sudo apt-get update
     !sudo apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng -y
 
-Installation and import of SolubilityModels
+Installation and Import of SolubilityModels
 ===========================================
 
 Solubility models may be installed using pip...
