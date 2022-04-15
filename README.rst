@@ -1,3 +1,5 @@
+
+
 Solubility Models Library
 =========================
 
@@ -69,7 +71,7 @@ Before installing the library you must verify the execution environment and inst
 Google Colaboratory Support
 ---------------------------
 
-For use in Google Colab install texlive-fonts, texlive-fonts-extra and dvipng package using:
+For use in Google Colab (https://colab.research.google.com/) install texlive-fonts, texlive-fonts-extra and dvipng package using:
 
 .. code:: python
 
@@ -78,14 +80,14 @@ For use in Google Colab install texlive-fonts, texlive-fonts-extra and dvipng pa
 Jupyter Notebook and JupyterLab Support 
 ---------------------------------------
 
-For use in Jupyter Notebook and JupyterLab install jupyter-dash and  python-kaleido packages using:
+For use in Jupyter Notebook and JupyterLab (https://anaconda.org/) install jupyter-dash and  python-kaleido packages using:
 
 .. code:: python
 
     !apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng
 
 Datalore Support 
----------------------------------------
+----------------
 
 For use in the enviroment Datalore (https://datalore.jetbrains.com) install texlive-fonts, texlive-fonts-extra and dvipng 
 package using:
@@ -96,7 +98,7 @@ package using:
     !sudo apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng -y
 
 Installation and import of SolubilityModels
-===============================================
+===========================================
 
 Solubility models may be installed using pip...
   
@@ -115,3 +117,21 @@ To import a particular model you can use the model name e.g:
 .. code:: python
 
     from SolubilityModels import Modified_Apelblat
+
+
+
+Classes of Solubility Models
+============================
+
+The Solubility Models module essentially uses two classes for computational analysis, the class ``model``, is 
+used for the analysis of data from a particular model, the class ``models`` is used for the analysis of such 
+data in all solubility models.
+
+Colaboradores
+=============
+
+Jhonny Osorio Gallego
+
+https://github.com/josorio398
+
+osoriojohnny1986@gmail.com
