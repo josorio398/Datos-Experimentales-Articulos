@@ -1,6 +1,4 @@
 
-
-
 Solubility Models Library
 =========================
 
@@ -111,13 +109,13 @@ To import all solubility models you can use:
 
 .. code:: python
 
-    from SolubilityModels import Models
+    from SolubilityModels.Models import *
 
 To import a particular model you can use the model name e.g:
 
 .. code:: python
 
-    from SolubilityModels import Modified_Apelblat
+    from SolubilityModels.Modified_Apelblat import *
 
 Data Upload
 ===========
@@ -157,6 +155,7 @@ Method to show the equation of the chosen solubility model.
 
 Experimental values method
 --------------------------
+
 Method to show and download in different formats ("xlsx","csv","tex","pdf") the dataframe experimental values of the model, 
 the experimental mole fractions of solubility can be multiplied by a power of ten.
 
@@ -171,6 +170,7 @@ the experimental mole fractions of solubility can be multiplied by a power of te
 
 Parameters method
 -----------------
+
 Method to show the model fit parameters with their standard deviation for each mass fraction 
 in a dataframe. Download in different formats the parameters dataframe.
 
@@ -185,6 +185,7 @@ in a dataframe. Download in different formats the parameters dataframe.
 
 Calculate values method
 -----------------------
+
 Method to show the table of calculated values of the solubility according to temperatures 
 and mass fractions in a dataframe. Download in different formats the calculated values dataframe.
 
@@ -200,27 +201,26 @@ and mass fractions in a dataframe. Download in different formats the calculated 
 Contributors
 ============
 
-- Jhonny Osorio Gallego
+- **Prof.Jhonny Osorio Gallego, M.Sc.**
 
 https://github.com/josorio398
 
 jhonny.osorio@profesores.uamerica.edu.co
 
-- Rossember Eden Cárdenas Torres
+- **Prof.Rossember Eden Cárdenas Torres, M.Sc.**
 
 https://github.com/Rossember555
 
 rossember.cardenas@profesores.uamerica.edu.co
 
-- Claudia Patricia Ortiz
+- **Prof.Claudia Patricia Ortiz, M.Sc.**
 
 https://github.com/cportiz/cportiz
 
-correo:
+cportizd14@gmail.com
 
-- Daniel Ricardo Delgado
+- **Prof.Daniel Ricardo Delgado, Ph.D**
 
 https://github.com/drdelgad0
 
-correo:
-
+danielr.delgado@campusucc.edu.co
