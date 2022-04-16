@@ -149,7 +149,7 @@ Method to show the equation of the chosen solubility model.
   model_λh.equation
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
-   :height: 50
+   :height: 100
    :align: center
    :alt: alternate text 
 
