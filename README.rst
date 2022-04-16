@@ -1,6 +1,7 @@
 
 
 
+
 Solubility Models Library
 =========================
 
@@ -200,7 +201,7 @@ and mass fractions in a dataframe. Download in different formats the calculated 
 Contributors
 ============
 
-Jhonny Osorio Gallego
+- Jhonny Osorio Gallego
 
 https://github.com/josorio398
 
@@ -212,13 +213,13 @@ https://github.com/Rossember555
 
 rossember.cardenas@profesores.uamerica.edu.co
 
-Claudia Patricia Ortiz
+- Claudia Patricia Ortiz
 
 https://github.com/drdelgad0
 
 rossember.cardenas@profesores.uamerica.edu.co
 
-Daniel Ricardo Delgado
+- Daniel Ricardo Delgado
 
 https://github.com/drdelgad0
 
