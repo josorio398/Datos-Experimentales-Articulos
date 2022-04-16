@@ -1,5 +1,7 @@
 
 
+
+
 Solubility Models Library
 =========================
 
@@ -118,14 +120,55 @@ To import a particular model you can use the model name e.g:
 
     from SolubilityModels import Modified_Apelblat
 
+Data Upload
+===========
 
+For upload the dataset according to the format of the standard table (https://da.gd/CAx7m) as a path or url in extension 
+"xlsx" or "csv" using:
 
-Classes of Solubility Models
-============================
+.. code:: python
 
-The Solubility Models module essentially uses two classes for computational analysis, the class ``model``, is 
-used for the analysis of data from a particular model, the class ``models`` is used for the analysis of such 
-data in all solubility models.
+    data = dataset("url or path")
+
+Class model
+===========
+
+The model class allows the computational analysis of the data according to a particular solubility model,
+as an example, the following code is presented:
+
+.. code:: python
+
+  from SolubilityModels import Models
+  data = dataset("https://raw.githubusercontent.com/SolubilityGroup/Thermodynamic_Solutions/main/Test%20data/SMT-MeCN-MeOH.csv")
+ 
+  model_λh = model.buchowski_ksiazaczak(data,Tf = 471.55)
+
+Equation method
+---------------
+Method to show the equation of the chosen solubility model.
+
+.. code:: python
+
+  model_λh.equation
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
+   :height: 100
+   :align: center
+   :alt: alternate text 
+
+Experimental values method
+--------------------------
+Method to show and download in different formats ("xlsx","csv","tex","pdf") the dataframe experimental values of the model, 
+the experimental mole fractions of solubility can be multiplied by a power of ten.
+
+.. code:: python
+
+  model_λh.experimental_values(scale = 2, download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/experimental%20values.png?raw=true
+   :height: 200
+   :align: center
+   :alt: alternate text 
 
 Colaboradores
 =============
