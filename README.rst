@@ -1,7 +1,6 @@
 
 
 
-
 Solubility Models Library
 =========================
 
@@ -66,7 +65,7 @@ calculated values and experimental of solubility models such as :
 - Wilson
 - Weibull of two parameters
   
-Installation of Requirements
+Installation of requirements
 ============================
 Before installing the library you must verify the execution environment and install the following requirements 
 
@@ -99,7 +98,7 @@ package using:
     !sudo apt-get update
     !sudo apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng -y
 
-Installation and Import of SolubilityModels
+Installation and import of SolubilityModels
 ===========================================
 
 Solubility models may be installed using pip...
@@ -165,16 +164,62 @@ the experimental mole fractions of solubility can be multiplied by a power of te
 
   model_λh.experimental_values(scale = 2, download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/experimental%20values.png?raw=true
-   :height: 350
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Exp-values.png?raw=true
+   :height: 200
    :align: center
    :alt: alternate text 
 
-Colaboradores
-=============
+Parameters method
+-----------------
+Method to show the model fit parameters with their standard deviation for each mass fraction 
+in a dataframe. Download in different formats the parameters dataframe.
+
+.. code:: python
+
+  model_λh.parameters(cmap ="Reds",download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/para.png?raw=true
+   :height: 200
+   :align: center
+   :alt: alternate text 
+
+Calculate values method
+-----------------------
+Method to show the table of calculated values of the solubility according to temperatures 
+and mass fractions in a dataframe. Download in different formats the calculated values dataframe.
+
+.. code:: python
+
+  model_λh.calculated_values(scale=2,download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/cal-values.png?raw=true
+   :height: 200
+   :align: center
+   :alt: alternate text 
+
+Contributors
+============
 
 Jhonny Osorio Gallego
 
 https://github.com/josorio398
 
-osoriojohnny1986@gmail.com
+jhonny.osorio@profesores.uamerica.edu.co
+
+Rossember Eden Cárdenas Torres
+
+https://github.com/Rossember555
+
+rossember.cardenas@profesores.uamerica.edu.co
+
+Claudia Patricia Ortiz
+
+https://github.com/drdelgad0
+
+rossember.cardenas@profesores.uamerica.edu.co
+
+Daniel Ricardo Delgado
+
+https://github.com/drdelgad0
+
+rossember.cardenas@profesores.uamerica.edu.co
