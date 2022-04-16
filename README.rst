@@ -1,7 +1,6 @@
 
 
 
-
 Solubility Models Library
 =========================
 
@@ -166,7 +165,7 @@ the experimental mole fractions of solubility can be multiplied by a power of te
   model_λh.experimental_values(scale = 2, download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Exp-values.png?raw=true
-   :height: 200
+   :height: 300
    :align: center
    :alt: alternate text 
 
@@ -180,7 +179,7 @@ in a dataframe. Download in different formats the parameters dataframe.
   model_λh.parameters(cmap ="Reds",download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/para.png?raw=true
-   :height: 200
+   :height: 300
    :align: center
    :alt: alternate text 
 
@@ -194,7 +193,7 @@ and mass fractions in a dataframe. Download in different formats the calculated 
   model_λh.calculated_values(scale=2,download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/cal-values.png?raw=true
-   :height: 200
+   :height: 300
    :align: center
    :alt: alternate text 
 
@@ -207,7 +206,7 @@ https://github.com/josorio398
 
 jhonny.osorio@profesores.uamerica.edu.co
 
-Rossember Eden Cárdenas Torres
+- Rossember Eden Cárdenas Torres
 
 https://github.com/Rossember555
 
