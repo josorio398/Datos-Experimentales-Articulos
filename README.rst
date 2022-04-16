@@ -214,12 +214,13 @@ rossember.cardenas@profesores.uamerica.edu.co
 
 - Claudia Patricia Ortiz
 
-https://github.com/drdelgad0
+https://github.com/cportiz/cportiz
 
-rossember.cardenas@profesores.uamerica.edu.co
+correo:
 
 - Daniel Ricardo Delgado
 
 https://github.com/drdelgad0
 
-rossember.cardenas@profesores.uamerica.edu.co
+correo:
+
