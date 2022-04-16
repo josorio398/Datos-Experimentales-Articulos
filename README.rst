@@ -149,7 +149,7 @@ Method to show the equation of the chosen solubility model.
   model_λh.equation
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
-   :height: 100
+   :height: 50
    :align: center
    :alt: alternate text 
 
@@ -164,7 +164,7 @@ the experimental mole fractions of solubility can be multiplied by a power of te
   model_λh.experimental_values(scale = 2, download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Exp-values.png?raw=true
-   :height: 300
+   :height: 400
    :align: center
    :alt: alternate text 
 
