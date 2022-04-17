@@ -225,7 +225,7 @@ Method to show the table of statisticians of the model in a dataframe
   model_λh.statisticians(download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Stad.png?raw=true
-   :height: 200
+   :height: 240
    :align: center
    :alt: alternate text 
 
