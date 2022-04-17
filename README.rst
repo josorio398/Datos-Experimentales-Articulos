@@ -216,7 +216,7 @@ the relative deviations dataframe.
    :alt: alternate text 
 
 Statisticians method
---------------------------
+--------------------
 
 Method to show the table of statisticians of the model in a dataframe
 
@@ -226,6 +226,22 @@ Method to show the table of statisticians of the model in a dataframe
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Stad.png?raw=true
    :height: 240
+   :align: center
+   :alt: alternate text 
+
+Plot method
+-----------
+
+Method to shows the graph of calculated values and experimental values of solubility
+completely or separately according to mass fractions. Download in different formats 
+the graph.
+
+.. code:: python
+
+  model_λh.plot(download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Plot.png?raw=true
+   :height: 400
    :align: center
    :alt: alternate text 
 
