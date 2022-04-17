@@ -211,7 +211,7 @@ the relative deviations dataframe.
   model_λh.relative_deviations(scale = 2,download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/RD.png?raw=true
-   :height: 200
+   :height: 400
    :align: center
    :alt: alternate text 
 
@@ -225,7 +225,7 @@ Method to show the table of statisticians of the model in a dataframe
   model_λh.statisticians(download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Stad.png?raw=true
-   :height: 300
+   :height: 150
    :align: center
    :alt: alternate text 
 
