@@ -211,7 +211,7 @@ the relative deviations dataframe.
   model_λh.relative_deviations(scale = 2,download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/RD.png?raw=true
-   :height: 400
+   :height: 200
    :align: center
    :alt: alternate text 
 
