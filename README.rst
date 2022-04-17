@@ -65,7 +65,7 @@ calculated values and experimental of solubility models such as :
   
 Installation of requirements
 ============================
-Before installing the library you must verify the execution environment and install the following requirements 
+Before installing the library you must verify the execution environment and install the following requirements:
 
 Google Colaboratory Support
 ---------------------------
@@ -83,7 +83,8 @@ For use in Jupyter Notebook and JupyterLab (https://anaconda.org/) install jupyt
 
 .. code:: python
 
-    !apt install texlive-fonts-recommended texlive-fonts-extra cm-super dvipng
+    conda install -c plotly jupyter-dash
+    conda install -c plotly python-kaleido
 
 Datalore Support 
 ----------------
@@ -149,7 +150,7 @@ Method to show the equation of the chosen solubility model.
   model_λh.equation
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
-   :height: 90
+   :height: 80
    :align: center
    :alt: alternate text 
 
@@ -164,7 +165,7 @@ the experimental mole fractions of solubility can be multiplied by a power of te
   model_λh.experimental_values(scale = 2, download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Exp-values.png?raw=true
-   :height: 400
+   :height: 300
    :align: center
    :alt: alternate text 
 
@@ -179,7 +180,7 @@ in a dataframe. Download in different formats the parameters dataframe.
   model_λh.parameters(cmap ="Reds",download_format="tex")
 
 .. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/para.png?raw=true
-   :height: 400
+   :height: 300
    :align: center
    :alt: alternate text 
 
@@ -193,33 +194,69 @@ and mass fractions in a dataframe. Download in different formats the calculated 
 
   model_λh.calculated_values(scale=2,download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/cal-values.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Cal-values.png?raw=true
+   :height: 300
+   :align: center
+   :alt: alternate text 
+
+Relative deviations method
+--------------------------
+
+Method to show the table relative deviations for each value calculated according
+to temperatures and mass fractions in a dataframe. Download in different formats 
+the relative deviations dataframe.
+
+.. code:: python
+
+  model_λh.relative_deviations(scale = 2,download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/RD.png?raw=true
+   :height: 300
+   :align: center
+   :alt: alternate text 
+
+Statisticians method
+--------------------------
+
+Method to show the table of statisticians of the model in a dataframe
+
+.. code:: python
+
+  model_λh.statisticians(download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Stad.png?raw=true
+   :height: 300
    :align: center
    :alt: alternate text 
 
 Contributors
 ============
 
-- **Prof.Jhonny Osorio Gallego, M.Sc.**
+- **Prof. Jhonny Osorio Gallego, M.Sc.**
 
 https://github.com/josorio398
 
 jhonny.osorio@profesores.uamerica.edu.co
 
-- **Prof.Rossember Eden Cárdenas Torres, M.Sc.**
+- **Prof. Rossember Eden Cárdenas Torres, M.Sc.**
 
 https://github.com/Rossember555
 
 rossember.cardenas@profesores.uamerica.edu.co
 
-- **Prof.Claudia Patricia Ortiz, M.Sc.**
+- **Ing. Cristhian David Rodriguez Quiroga**
+
+https://github.com/CQuiroga97
+
+crodriguezq@ucentral.edu.co
+
+- **Prof. Claudia Patricia Ortiz, M.Sc.**
 
 https://github.com/cportiz/cportiz
 
 cportizd14@gmail.com
 
-- **Prof.Daniel Ricardo Delgado, Ph.D**
+- **Prof. Daniel Ricardo Delgado, Ph.D**
 
 https://github.com/drdelgad0
 
