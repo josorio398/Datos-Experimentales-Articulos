@@ -136,7 +136,7 @@ as an example, the following code is presented:
 
 .. code:: python
 
-  from SolubilityModels import Models
+  from SolubilityModels.Models import *
   data = dataset("https://raw.githubusercontent.com/SolubilityGroup/Thermodynamic_Solutions/main/Test%20data/SMT-MeCN-MeOH.csv")
  
   model_λh = model.buchowski_ksiazaczak(data,Tf = 471.55)
@@ -149,7 +149,7 @@ Method to show the equation of the chosen solubility model.
 
   model_λh.equation
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation-gigapixel.png?raw=true
    :height: 80
    :align: center
    :alt: alternate text 
@@ -164,8 +164,8 @@ the experimental mole fractions of solubility can be multiplied by a power of te
 
   model_λh.experimental_values(scale = 2, download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Exp-values.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/experimental-gigapixel.png?raw=true
+   :height: 350
    :align: center
    :alt: alternate text 
 
@@ -179,8 +179,8 @@ in a dataframe. Download in different formats the parameters dataframe.
 
   model_λh.parameters(cmap ="Reds",download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/para.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/parameters-gigapixel.png?raw=true
+   :height: 380
    :align: center
    :alt: alternate text 
 
@@ -194,8 +194,8 @@ and mass fractions in a dataframe. Download in different formats the calculated 
 
   model_λh.calculated_values(scale=2,download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Cal-values.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/calculate-gigapixel.png?raw=true
+   :height: 350
    :align: center
    :alt: alternate text 
 
@@ -210,8 +210,8 @@ the relative deviations dataframe.
 
   model_λh.relative_deviations(scale = 2,download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/RD.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/relative-gigapixel.png?raw=true
+   :height: 350
    :align: center
    :alt: alternate text 
 
@@ -224,8 +224,8 @@ Method to show the table of statisticians of the model in a dataframe
 
   model_λh.statisticians(download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Stad.png?raw=true
-   :height: 240
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/statisticians-gigapixel.png?raw=true
+   :height: 200
    :align: center
    :alt: alternate text 
 
@@ -238,10 +238,19 @@ the graph.
 
 .. code:: python
 
+  model_λh.plot()
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotpng-megapixel.png?raw=true
+   :height: 400
+   :align: center
+   :alt: alternate text 
+
+.. code:: python
+
   model_λh.plot(download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/Plot.png?raw=true
-   :height: 400
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotlatex-gigapixel.png?raw=true
+   :height: 350
    :align: center
    :alt: alternate text 
 
