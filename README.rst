@@ -331,7 +331,7 @@ Citation
 
 To cite SolubilityModels in publications use:
 
-> J. Osorio Gallego, R.E. Cárdenas Torres, C.D. Rodriguez Quiroga, C.P. Ortiz, D.R. Delgado, Solubility Models Library, Python Package Index. (2022). https://pypi.org/project/SolubilityModels/
+- J. Osorio Gallego, R.E. Cárdenas Torres, C.D. Rodriguez Quiroga, C.P. Ortiz, D.R. Delgado, Solubility Models Library, Python Package Index. (2022). https://pypi.org/project/SolubilityModels/
 
 
 Contributors
