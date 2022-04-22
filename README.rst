@@ -149,7 +149,7 @@ Method to show the equation of the chosen solubility model.
 
   model_λh.equation
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation-gigapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/equation.png?raw=true
    :height: 80
    :align: center
    :alt: alternate text 
@@ -164,8 +164,8 @@ the experimental mole fractions of solubility can be multiplied by a power of te
 
   model_λh.experimental_values(scale = 2, download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/experimental-gigapixel.png?raw=true
-   :height: 350
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/experimental.png?raw=true
+   :height: 380
    :align: center
    :alt: alternate text 
 
@@ -179,8 +179,8 @@ in a dataframe. Download in different formats the parameters dataframe.
 
   model_λh.parameters(cmap ="Reds",download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/parameters-gigapixel.png?raw=true
-   :height: 380
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/parameters.png?raw=true
+   :height: 350
    :align: center
    :alt: alternate text 
 
@@ -194,7 +194,7 @@ and mass fractions in a dataframe. Download in different formats the calculated 
 
   model_λh.calculated_values(scale=2,download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/calculate-gigapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/calculate.png?raw=true
    :height: 350
    :align: center
    :alt: alternate text 
@@ -210,7 +210,7 @@ the relative deviations dataframe.
 
   model_λh.relative_deviations(scale = 2,download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/relative-gigapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/relative.png?raw=true
    :height: 350
    :align: center
    :alt: alternate text 
@@ -218,13 +218,13 @@ the relative deviations dataframe.
 Statisticians method
 --------------------
 
-Method to show the table of statisticians of the model in a dataframe
+Method to show the table of statisticians of the model in a dataframe.
 
 .. code:: python
 
   model_λh.statisticians(download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/statisticians-gigapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/statisticians.png?raw=true
    :height: 200
    :align: center
    :alt: alternate text 
@@ -240,7 +240,7 @@ the graph.
 
   model_λh.plot()
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotpng-megapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotpng.png?raw=true
    :height: 400
    :align: center
    :alt: alternate text 
@@ -249,10 +249,90 @@ the graph.
 
   model_λh.plot(download_format="tex")
 
-.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotlatex-gigapixel.png?raw=true
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotex.png?raw=true
    :height: 350
    :align: center
    :alt: alternate text 
+
+.. code:: python
+
+  model_λh.plot(apart=True)
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotapart.png?raw=true
+   :height: 400
+   :align: center
+   :alt: alternate text 
+
+.. code:: python
+
+  model_λh.plot(apart=True,download_format="tex")
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotapartlatex.png?raw=true
+   :height: 600
+   :align: center
+   :alt: alternate text 
+
+Class models
+============
+
+The models class allows the computational analysis of the data in all the models loaded in the library, with the 
+``statisticians``  and  ``plots`` methods.
+
+Statisticians method
+--------------------
+
+Method to show the table of statisticians of all models in a dataframe.
+
+.. code:: python
+
+  models.statisticians(data,Tf = 403.4)
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/stadall.png?raw=true
+   :height: 180
+   :align: center
+   :alt: alternate text 
+
+.. code:: python
+
+  models.statisticians(data,Tf = 403.4,download_format='tex')
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/stadallatex.png?raw=true
+   :height: 250
+   :align: center
+   :alt: alternate text 
+
+
+Plots method
+--------------------
+
+Method to shows the graphs of calculated values and experimental values of solubility
+for all models. Download in different formats the graph.
+
+.. code:: python
+
+  models.plots(data,Tf = 403.4)
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotmodelspng.png?raw=true
+   :height: 350
+   :align: center
+   :alt: alternate text 
+
+.. code:: python
+
+  models.plots(data,Tf = 403.4,download_format='tex')
+
+.. image:: https://github.com/josorio398/Solubility_Models_Library/blob/main/Test%20data/images/plotallatex.png?raw=true
+   :height: 600
+   :align: center
+   :alt: alternate text 
+
+Citation
+========
+
+To cite SolubilityModels in publications use:
+
+> J. Osorio Gallego, R.E. Cárdenas Torres, C.D. Rodriguez Quiroga, C.P. Ortiz, D.R. Delgado, Solubility Models Library, Python Package Index. (2022). https://pypi.org/project/SolubilityModels/
+
 
 Contributors
 ============
@@ -261,11 +341,16 @@ Contributors
 
 https://github.com/josorio398
 
+Fundación Universidad de América
+
 jhonny.osorio@profesores.uamerica.edu.co
+
 
 - **Prof. Rossember Eden Cárdenas Torres, M.Sc.**
 
 https://github.com/Rossember555
+
+Fundación Universidad de América
 
 rossember.cardenas@profesores.uamerica.edu.co
 
@@ -273,16 +358,22 @@ rossember.cardenas@profesores.uamerica.edu.co
 
 https://github.com/CQuiroga97
 
+Universidad Central
+
 crodriguezq@ucentral.edu.co
 
 - **Prof. Claudia Patricia Ortiz, M.Sc.**
 
 https://github.com/cportiz/cportiz
 
-cportizd14@gmail.com
+Corporación Universitaria Mininuto de Dios - UNIMINUTO
+
+claudia.ortiz.d@uniminuto.edu.co
 
 - **Prof. Daniel Ricardo Delgado, Ph.D**
 
 https://github.com/drdelgad0
+
+Universidad Cooperativa de Colombia
 
 danielr.delgado@campusucc.edu.co
